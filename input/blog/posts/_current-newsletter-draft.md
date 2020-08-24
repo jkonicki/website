@@ -43,9 +43,24 @@ We're also planning our next .NET Conf: "Focus" event, where we continue focusin
 
 ## .NET Foundation Project Updates
 
+### [Steeltoe 3.0 GA is now available!](https://steeltoe.io/blog/steeltoe-3-0-packs-a-mighty-punch-with-many-new-features)
 
+[Steeltoe](https://steeltoe.io) is an application framework, built on the standard .NET interfaces, that provides libraries for .NET Framework and .NET Core developers in order to build cloud-native applications.
 
+In this release, we have added some great new features and here are some of the highlights:
 
+  * Automatic wiring and configuration of Messaging APIs with RabbitMQ
+  * Kubernetes support for configuration (ConfigMap and Secrets) and service discovery using Kubernetes .NET Client.
+  * Added Health Groups for `readiness` and `liveness` endpoints which are grouped under the `/health` endpoint
+  * Metrics now uses `EventSource` and `EventCounter`, along with a new prometheus exporter that now uses OpenTelemetry metrics packages
+  * Distributed tracing library now has new exporters and updated internal libraries from OpenCensus to OpenTelemetry
+  * Pluggable architecture for Service Discovery (Consul, Eureka, and Kubernetes
+  * New Connector for CosmosDB
+  * The `/heapdump` actuator endpoint now supports heap dumps on Linux
+  * Circuit Breaker using Hystrix now using the Prometheus endpoint for easier consumption of events on Prometheus supported services
+  * Added mTLS support and service to service authentication using rotating certificates
+
+A lot of time and effort went into this release and we look forward to hearing from community. 
 
 ## New Projects
 
